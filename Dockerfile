@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore-build:2.0 AS build-env
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 COPY src/RazorRockstars.WebHost /app
 WORKDIR /app
 
@@ -6,8 +6,8 @@ RUN dotnet restore
 RUN dotnet publish -c Release -o out
 
 # Build runtime image
-FROM microsoft/aspnetcore:2.0
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS runtime
 WORKDIR /app
-COPY --from=build-env /app/out .
+COPY --from=build /app/out ./
 ENV ASPNETCORE_URLS http://*:5000
 ENTRYPOINT ["dotnet", "RazorRockstars.WebHost.dll"]
