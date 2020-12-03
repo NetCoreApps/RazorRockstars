@@ -146,7 +146,7 @@
     <p>
         ServiceStack's Razor ViewEngine is an <b>optional .NET 4.5 add-on</b> that's self-contained 
         within the
-        <a href="http://docs.servicestack.net/plugins.html">RazorFormat plugin</a>
+        <a href="https://docs.servicestack.net/plugins.html">RazorFormat plugin</a>
         which can be easily added to any <b>empty ASP.NET or Console Application</b> project via NuGet with:
     </p>
     
@@ -287,9 +287,9 @@
         <a href="https://github.com/NetCoreApps/RazorRockstars/blob/f71a3b30f353f1fed1126f36c86d4d59f2235327/src/RazorRockstars.WebHost/RockstarsService.cs#L37">simple C# class</a> auto-wired with your registered dependencies that accepts any user-defined Request DTO and 
         lets you return any object which is automatically serialized into the expected Response Content-Type. 
         Composable and re-usable functionality can be applied to all your services via 
-        <a href="http://docs.servicestack.net/request-and-response-filters.html">Request / Response Filters</a>, 
-        <a href="http://docs.servicestack.net/filter-attributes.html">Filter Attributes</a>, 
-        <a href="http://docs.servicestack.net/validation.html#validation-feature">Validators</a> or by extending a common base class -
+        <a href="https://docs.servicestack.net/request-and-response-filters.html">Request / Response Filters</a>, 
+        <a href="https://docs.servicestack.net/filter-attributes.html">Filter Attributes</a>, 
+        <a href="https://docs.servicestack.net/validation.html#validation-feature">Validators</a> or by extending a common base class -
         all of which get auto-wired with your registered dependencies. Even Razor views have access to your IOC dependencies.
     </p>
     <p>
@@ -299,7 +299,7 @@
         This makes your logic more re-usable and is how any new feature we add to the framework is immediately able to work with your 
         existing services without any code-changes required.
         E.g. you can code as you would normally and throw C# Exceptions and the ideal HTTP Response gets emitted, you also have access to 
-        <a href="http://docs.servicestack.net/validation.html#validation-feature">rich fluent validation</a>         
+        <a href="https://docs.servicestack.net/validation.html#validation-feature">rich fluent validation</a>         
         that supports returning typed structured error responses back to C# clients.
     </p>
     
@@ -332,20 +332,20 @@
         you get to re-use your existing web service implementation where HTML is just another Content-Type: 
     </p>
     <p style="text-align:center;padding:10px;">
-        <a href="http://docs.servicestack.net/architecture-overview.html">
+        <a href="https://docs.servicestack.net/architecture-overview.html">
             <img class="preview" src="/img/architecture-htmlformat.png" alt="ServiceStack Architecture" /></a>
     </p>
     <p>
         ServiceStack supports multiple view engines out-of-the-box: By default 
-        <a href="http://docs.servicestack.net/html5reportformat.html">HtmlReport</a> and 
-        <a href="http://docs.servicestack.net/markdown-razor.html">Markdown</a> 
+        <a href="https://docs.servicestack.net/html5reportformat.html">HtmlReport</a> and 
+        <a href="https://docs.servicestack.net/markdown-razor.html">Markdown</a> 
         is pre-registered, whilst Razor support can be <a href="#install">installed via NuGet</a>.
     </p>
 
     <p>
         When the client requests HTML Content-Type, ServiceStack will cycle through all registered view engines 
         to find a matching view, if no matches are found the 
-        <a href="http://docs.servicestack.net/html5reportformat.html">HtmlReport</a>
+        <a href="https://docs.servicestack.net/html5reportformat.html">HtmlReport</a>
         is used as a fallback which provides a readable and semantic HTML layout letting you visualize all the 
         data returned from your web service at a glance.
     </p>
@@ -606,8 +606,8 @@
     <p>
         In addition to accessing IOC debendencies, base classes also provide quick access to the most common providers like 
         ADO.NET's <b class="db">IDbConnection</b> as well as ServiceStack's clean 
-        <a href="http://docs.servicestack.net/sessions.html">Session</a> and
-        <a href="http://docs.servicestack.net/caching.html">Caching</a> providers.
+        <a href="https://docs.servicestack.net/sessions.html">Session</a> and
+        <a href="https://docs.servicestack.net/caching.html">Caching</a> providers.
     </p>
     
     <p>
