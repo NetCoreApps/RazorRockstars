@@ -19,5 +19,5 @@ jobs:
           dotnet-version: 5.0.100
 
       - name: build
-        run: dotnet build
+        run: dotnet build src/RazorRockstars.sln
         working-directory: .
